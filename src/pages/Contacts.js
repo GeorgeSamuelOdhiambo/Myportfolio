@@ -1,6 +1,7 @@
 import React from "react";
 import ContactmeForm from "../components/ContactmeForm";
 import Corasol from "../components/Corasol";
+import Socialmedia from "../components/Socialmedia";
 
 const Contacts = () => {
   return (
@@ -26,6 +27,7 @@ const Contacts = () => {
           <ContactmeForm />
         </div>
       </div>
+      <Socialmedia/>
     </>
   );
 };

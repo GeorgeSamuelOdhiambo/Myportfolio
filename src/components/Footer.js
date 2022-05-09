@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
+import { SiGmail } from "react-icons/si";
+import {
+  BsFillTelephoneInboundFill,
+  BsTelephoneInboundFill,
+} from "react-icons/bs";
+import { GoLocation } from "react-icons/go";
+import Copyrightfooter from "./Copyrightfooter";
 
 function Footer() {
   const [phonenumberOne, setPhoneOne] = useState();
@@ -28,13 +34,13 @@ function Footer() {
         <div className="container text-center text-md-start mt-5">
           <div className="row mt-3">
             <div className="col-md-6 col-lg-7 col-xl-6 mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">
-                <i className="fas fa-gem me-3"></i>Odhiambo George
+              <h6 className="text-uppercase fw-bold mb-4 text-center">
+                Odhiambo George
               </h6>
               <p>{myText}</p>
             </div>
 
-            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-center">
               <h6 className="text-uppercase fw-bold mb-4">Core SKILLS</h6>
               <p>
                 <Link
@@ -74,37 +80,37 @@ function Footer() {
               </p>
             </div>
 
-            <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-center">
               <h6 className="text-uppercase fw-bold mb-4">contacts</h6>
               <p>
-                <i className="fas fa-home me-3"></i> {location}
+                <GoLocation />
+                <i className="me-3"></i> {location}
               </p>
               <p>
-                <Link to="/" className="fas fa-envelope me-3"></Link>
+                <a
+                  href="https://mail.google.com/mail/u/0/#inbox?compose=new"
+                  target="_blank"
+                  className=""
+                  style={{ textDecoration: "none" }} rel="noreferrer"
+                >
+                  <SiGmail></SiGmail>{" "}
+                </a>
+                <i className="me-3"></i>
                 {email}
               </p>
               <p>
-                <i className="fas fa-phone me-3"></i> {phonenumberOne}
+                <BsFillTelephoneInboundFill />
+                <i className="me-3"></i> {phonenumberOne}
               </p>
               <p>
-                <i className="fas fa-print me-3"></i> {phonenumberTwo}
+                <BsTelephoneInboundFill />
+                <i className="me-3"></i> {phonenumberTwo}
               </p>
             </div>
           </div>
         </div>
       </section>
-
-      <div className="text-center p-4 bg-rgba(0, 0, 0, 0.05)">
-        © {new Date().getFullYear()} Copyright:
-        <Link
-          to=""
-          className="text-reset fw-bold"
-          style={{ textDecoration: "none" }}
-        >
-          {" "}
-          Odhiambo George
-        </Link>
-      </div>
+      <Copyrightfooter />
     </footer>
   );
 }

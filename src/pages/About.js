@@ -1,16 +1,14 @@
 import React from 'react'
+import Aboutme from '../components/Aboutme'
 
 const About = () => {
   return (
-    <div className='container-md bg-success p-4 h-80 '
+    <div className="container-xxl p-5 text-center justify-content-center align-items-center"
     style={{
-      "margin-top": "58px",
-      "background-size": "cover",
+      "background-color": "#9d789b",
+      "marginTop": "58PX"
     }}>
-      <div className='row'>
-        <div className='col-xl-8 col-md-8 col-lg-8'></div>
-        <div className='col-xl-4 col-md-4 col-lg-4'></div>
-      </div>
+      <Aboutme></Aboutme>
     </div>
   )
 }

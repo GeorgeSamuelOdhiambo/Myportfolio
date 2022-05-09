@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {AiOutlineMenu} from 'react-icons/ai'
 
-let logo = "../images/logo.png";
+let logo = "https://db5pap001files.storage.live.com/y4mP2cq5x_lZKJx-0lfhFD0C07J0xUYW1YjqTGSp7Uy6DRmC1i8g-AfZDmmXnjXbcTaux5-8EAR9_OHf7BZ6WBTHJSgZ0ER5fHjU8Tx4UPHq3GEL1gLfhflwttOSkDmjTbMO_bxTJjDArc3lwlrtpVCZU1PKPl7b6SwL6AMTj3DnpeSUKdXBlVBVMpmlpmBwHWFDEPPnL8KT9Oj2jPRAFU_5bXTrlp97uzA8p4SGQa3H1w?encodeFailures=1&width=100&height=51";
 
 const Navbar = (props) => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light p-3 mb-2 bg-dark bg-gradient bg-opacity-65 container-xxl fixed-top">
+    <nav className="navbar navbar-expand-lg navbar-light p-3 mb-2 bg-dark bg-gradient bg-opacity-50 container-xxl fixed-top">
       <div className="container-fluid">
+        
         <button
           className="navbar-toggler"
           type="button"
@@ -15,8 +17,8 @@ const Navbar = (props) => {
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
-        >
-          <i className="fas fa-bars"></i>
+        ><AiOutlineMenu/>
+          {/* <i className="fas fa-bars"></i> */}
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
