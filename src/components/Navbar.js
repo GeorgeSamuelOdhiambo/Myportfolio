@@ -18,7 +18,6 @@ const Navbar = (props) => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         ><AiOutlineMenu/>
-          {/* <i className="fas fa-bars"></i> */}
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">

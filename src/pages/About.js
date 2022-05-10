@@ -1,5 +1,6 @@
 import React from 'react'
 import Aboutme from '../components/Aboutme'
+import Skills from '../components/Skills'
 
 const About = () => {
   return (
@@ -9,6 +10,7 @@ const About = () => {
       "marginTop": "58PX"
     }}>
       <Aboutme></Aboutme>
+      <Skills/>
     </div>
   )
 }
