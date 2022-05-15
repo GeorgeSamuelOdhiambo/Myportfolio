@@ -1,11 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { SiGmail } from "react-icons/si";
-import {
-  BsFillTelephoneInboundFill,
-  BsTelephoneInboundFill,
-} from "react-icons/bs";
-import { GoLocation } from "react-icons/go";
 import Copyrightfooter from "./Copyrightfooter";
 
 function Footer() {
@@ -83,28 +77,18 @@ function Footer() {
             <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-center">
               <h6 className="text-uppercase fw-bold mb-4">contacts</h6>
               <p>
-                <GoLocation />
-                <i className="me-3"></i> {location}
+                <i class="fas fa-home me-3"></i>
+                {location}
               </p>
               <p>
-                <a
-                  href="https://mail.google.com/mail/u/0/#inbox?compose=new"
-                  target="_blank"
-                  className=""
-                  style={{ textDecoration: "none" }} rel="noreferrer"
-                >
-                  <SiGmail></SiGmail>{" "}
-                </a>
-                <i className="me-3"></i>
+                <i className="fas fa-envelope me-3"></i>
                 {email}
               </p>
               <p>
-                <BsFillTelephoneInboundFill />
-                <i className="me-3"></i> {phonenumberOne}
+                <i className="fas fa-phone me-3" /> {phonenumberOne}
               </p>
               <p>
-                <BsTelephoneInboundFill />
-                <i className="me-3"></i> {phonenumberTwo}
+                <i className="fas fa-phone me-3" /> {phonenumberTwo}
               </p>
             </div>
           </div>

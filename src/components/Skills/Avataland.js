@@ -5,8 +5,8 @@ import {IoMdContact} from "react-icons/io"
 
 function Avataland() {
   return (
-    <section style={{ "background-color": "#9d789b" }}>
-      <div className="py-5 h-100 ">
+    <section>
+      <div className="pt-5 pb-3 h-100 ">
         <div className="row d-flex justify-content-center align-items-center h-100">
           <div className="container">
             <div className="card" style={{ "border-radius": "15px" }}>
@@ -66,8 +66,8 @@ function Avataland() {
                       </div>
                     </div>
                     <div className="d-flex pt-1">
-                        <Link to="/contacts" className="btn btn-outline-success me-1 flex-grow-1"style={{ textDecoration: "none" }} ><IoMdContact/>Contact Me</Link>
-                        <a href="https://www.linkedin.com/in/george-samuel-44807b20b/" target="_blank" className="btn btn-success flex-grow-1 text-white"style={{ textDecoration: "none"}} rel="noreferrer"><FaLinkedin/>LinkIn Profile</a>
+                        <Link to="/contacts" className="btn btn-outline-success me-1 flex-grow-1"style={{ textDecoration: "none", borderRadius:"30px" }} ><IoMdContact/>Contact Me</Link>
+                        <a href="https://www.linkedin.com/in/george-samuel-44807b20b/" target="_blank" className="btn btn-success flex-grow-1 text-white"style={{ textDecoration: "none", borderRadius:"30px"}} rel="noreferrer"><FaLinkedin/>LinkIn Profile</a>
                     </div>
                   </div>
                 </div>

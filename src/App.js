@@ -6,7 +6,7 @@ import Skills from "./pages/Skills";
 import Contacts from "./pages/Contacts";
 import Error from "./pages/Error";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
