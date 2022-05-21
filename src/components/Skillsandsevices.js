@@ -1,12 +1,14 @@
 import React from "react";
 
 function Skillsandsevices() {
+  const textcolor = { color: "#e73131" };
+  let lineheigt = {height : "5px"};
   return (
-    <section className="card bg-white bg-opacity-50" style={{ "border-radius": "30px" }}>
+    <section className="card bg-white bg-opacity-50" style={{ borderRadius: "30px" }}>
       <div className="container" data-aos="fade-up">
         <div className="section-title">
-          <h2>Skills</h2>
-          <hr></hr>
+          <h2 className="fw-bold">MY <span style={textcolor}>SKILLS</span></h2>
+          <div style={{ border: "2px solid #e73131", width: "100%" }}></div>
           <p>
             Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
             aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
@@ -22,7 +24,7 @@ function Skillsandsevices() {
               <span className="skill">
                 HTML <i className="val">100%</i>
               </span>
-              <div className="progress" style={{height : "5px"}}>
+              <div className="progress" style={lineheigt}>
                 <div
                   className="progress-bar bg-success w-100"
                   role="progressbar"
@@ -38,7 +40,7 @@ function Skillsandsevices() {
               <span className="skill">
                 CSS <i className="val">75%</i>
               </span>
-              <div className="progress " style={{height : "5px"}}>
+              <div className="progress " style={lineheigt}>
                 <div
                   className="progress-bar bg-success w-75"
                   role="progressbar"
@@ -53,7 +55,7 @@ function Skillsandsevices() {
               <span className="skill">
                 JavaScript <i className="val">75%</i>
               </span>
-              <div className="progress" style={{height : "5px"}}>
+              <div className="progress" style={lineheigt}>
                 <div
                   className="progress-bar bg-success w-50"
                   role="progressbar"
@@ -68,7 +70,7 @@ function Skillsandsevices() {
               <span className="skill">
                 NodeJs <i className="val">75%</i>
               </span>
-              <div className="progress " style={{height : "5px"}}>
+              <div className="progress " style={lineheigt}>
                 <div
                   className="progress-bar bg-success w-75"
                   role="progressbar"
@@ -83,7 +85,7 @@ function Skillsandsevices() {
               <span className="skill">
                 React Native <i className="val">50%</i>
               </span>
-              <div className="progress " style={{height : "5px"}}>
+              <div className="progress " style={lineheigt}>
                 <div
                   className="progress-bar bg-success w-75"
                   role="progressbar"
@@ -100,7 +102,7 @@ function Skillsandsevices() {
               <span className="skill">
                 ReactJS <i className="val">75%</i>
               </span>
-              <div className="progress" style={{height : "5px"}}>
+              <div className="progress" style={lineheigt}>
                 <div
                   className="progress-bar w-75"
                   role="progressbar"
@@ -115,12 +117,12 @@ function Skillsandsevices() {
               <span className="skill">
                 MongoDB <i className="val">50%</i>
               </span>
-              <div className="progress" style={{height : "5px"}}>
+              <div className="progress" style={lineheigt}>
                 <div
                   className="progress-bar w-50"
                   role="progressbar"
                   aria-valuenow="50"
-                  aria-valuemin="0"
+                  aria-valuemin="0" 
                   aria-valuemax="100"
                 ></div>
               </div>
@@ -130,7 +132,7 @@ function Skillsandsevices() {
               <span className="skill">
                 MySQL <i className="val">75%</i>
               </span>
-              <div className="progress" style={{height : "5px"}}>
+              <div className="progress" style={lineheigt}>
                 <div
                   className="progress-bar w-75"
                   role="progressbar"
@@ -145,7 +147,7 @@ function Skillsandsevices() {
               <span className="skill">
                 DevOps <i className="val">75%</i>
               </span>
-              <div className="progress " style={{height : "5px"}}>
+              <div className="progress " style={lineheigt}>
                 <div
                   className="progress-bar bg-success w-75"
                   role="progressbar"
@@ -160,7 +162,7 @@ function Skillsandsevices() {
               <span className="skill">
                 Django <i className="val">75%</i>
               </span>
-              <div className="progress " style={{height : "5px"}}>
+              <div className="progress " style={lineheigt}>
                 <div
                   className="progress-bar bg-success w-75"
                   role="progressbar"

@@ -2,13 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import {AiOutlineMenu} from 'react-icons/ai'
 
-let logo = "https://db5pap001files.storage.live.com/y4mP2cq5x_lZKJx-0lfhFD0C07J0xUYW1YjqTGSp7Uy6DRmC1i8g-AfZDmmXnjXbcTaux5-8EAR9_OHf7BZ6WBTHJSgZ0ER5fHjU8Tx4UPHq3GEL1gLfhflwttOSkDmjTbMO_bxTJjDArc3lwlrtpVCZU1PKPl7b6SwL6AMTj3DnpeSUKdXBlVBVMpmlpmBwHWFDEPPnL8KT9Oj2jPRAFU_5bXTrlp97uzA8p4SGQa3H1w?encodeFailures=1&width=100&height=51";
+let logo = "https://lh3.googleusercontent.com/g-bNvvB1esm5QO2ozFplMlkdNQEVbldR16Yx-_XEzE8mvz8AfkWveKA3B4XBih4gYHSaPtrcE8QVdhlb9VN_42xxMJ6Nht7KDAS8mm8v8nlCKoqPfX6X8ZTFvrFtCHFWABthOL8GEtuC8_4L_5qRl2T0DLILy1V99SHsgoG5kVj7jhwDAlqTA3Wm1mdto_Hd5KRXOqZylLH05l--QnxukoqmhbFyIvfPRnkSb8XpNUxGk9-djiGsG1-3OlMp5jsTijDjnWcQ8wvazkKmSSpDeoIZWX6uDm5cIqHsX-GVj5qdR5GZBJ9HqK6ptOlJAHp-oRIClmkJ_AO1cKB1mFsf8B_TED_52rGmKTpMJyfdOco1wV8OiTKvk2vUZXSDb9MOmwIwylPNNfkfxpQqe5JD0EfQDDZQ5X3UoViM7Lijsj3hLBmJuCrnrnFbCrXEuvMafh1R_SrZidT_rSalf1FUAvxILBGcGqqAYrt2INAEHStJ8YZTIIUja8AVkQR-xGEpq7-P6g-YG8kMGzmsXMvNdZngAP2kGVrir-cpIOq8203z5IfWHWKoGsGJynK6AZjiD_RdsHrzN8pHtyXtgFOchMa8nPyIHG6JlYPnIKxrEH9TkgQTOXNJrwzZCQyL8hwo8wylAFc_y5y6u1s_7E6z9bfF8yfWQtNa-sDzWy6Alio0CDZ5n2S6Hr-RjPJ-uV2tdoCu7Cg39lelMzJxRif2_PKugs0HgfAjJQfcUTM8QCLzZsi3Za-KuX_OZyg=w100-h51-no?authuser=0";
 
 const Navbar = (props) => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light p-3 mb-2 bg-dark bg-gradient bg-opacity-50 container-xxl fixed-top">
+    // the navigation bar contains all funtions of the nav bar
+    <nav className="navbar navbar-expand-lg navbar-light p-3 mb-2 bg-dark bg-gradient container-xxl fixed-top">
       <div className="container-fluid">
-        
+        {/* shown when window get smaller */}
         <button
           className="navbar-toggler"
           type="button"
@@ -22,27 +23,27 @@ const Navbar = (props) => {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <Link className="navbar-brand mt-2 mt-lg-0 text-white" to="/">
-            <img src={logo} height="15" alt="GSO Logo" loading="lazy" />
+            <img src={logo} height="15" alt="LOGO" loading="lazy" />
           </Link>
 
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 text-white">
-            <li className="nav-item">
-              <Link className="nav-link text-white" to="/">
+            <li key="1" className="nav-item">
+              <Link className="nav-link text-white fw-bold" to="/">
                 Home
               </Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link text-white" to="/about">
+            <li key="2" className="nav-item">
+              <Link className="nav-link text-white fw-bold" to="/about">
                 About
               </Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link text-white" to="/contacts">
+            <li key="3" className="nav-item">
+              <Link className="nav-link text-white fw-bold" to="/contacts">
                 Contact
               </Link>
             </li>
-            <li className="nav-item text-white">
-              <Link className="nav-link text-white" to="/skills">
+            <li key="4" className="nav-item text-white">
+              <Link className="nav-link text-white fw-bold" to="/skills">
                 Skills
               </Link>
             </li>
@@ -71,17 +72,17 @@ const Navbar = (props) => {
               className="dropdown-menu dropdown-menu-end"
               aria-labelledby="navbarDropdownMenuAvatar"
             >
-              <li>
+              <li key="1">
                 <Link className="dropdown-item" to="/about">
                   My profile
                 </Link>
               </li>
-              <li>
+              <li key="2">
                 <Link className="dropdown-item" to="/#">
                   Settings
                 </Link>
               </li>
-              <li>
+              <li key="3">
                 <Link className="dropdown-item" to="/contacts">
                   Contact Me
                 </Link>

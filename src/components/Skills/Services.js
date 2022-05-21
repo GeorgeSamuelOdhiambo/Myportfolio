@@ -2,25 +2,27 @@ import React, { useEffect, useState } from "react";
 import Servicescad from "./Servicescad";
 function Services() {
   const [servicesdata, setData] = useState();
+  const [dataDisplay, setDatadisplay] = useState(false);
 
+  const textcolor = { color: "#e73131" };
   useEffect(() => {
     fetch("http://localhost:8080/services")
       .then((response) => response.json())
-      .then((info) => {
-        // console.log(data.data);
-        setData(info.data)
+      .then((data) => {
+        setData(data.info);
+        setDatadisplay(true);
       });
   }, []);
-console.log(servicesdata);
+
   return (
     <section
-      className="card bg-white bg-opacity-50 mt-3"
-      style={{ "border-radius": "30px" }}
+      className="bg-white mt-3"
+      style={{ borderRadius: "30px", width:"100%" }}
     >
       <div className="container" data-aos="fade-up">
         <div className="section-title">
-          <h2>Services</h2>
-          <hr />
+          <h2 className="fw-bold">SERVI<span style={textcolor}>CES</span></h2>
+          <div style={{ border: "2px solid #e73131", width: "100%" }}></div>
           <p>
             Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
             aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
@@ -30,13 +32,14 @@ console.log(servicesdata);
         </div>
 
         <div className="row">
-         {servicesdata.map((info) => (
-            <Servicescad
-              header={info.header}
-              imageUrl={info.imageUrl}
-              text={info.text}
-            />
-          ))}
+          {dataDisplay &&
+            servicesdata.map((info) => (
+              <Servicescad
+                header={info.header}
+                imageUrl={info.imageUrl}
+                text={info.text}
+              />
+            ))}
         </div>
       </div>
     </section>

@@ -1,11 +1,11 @@
 import React from "react";
-import Testimony from "./Testimony";
+import Testimony from "../Testimony";
 
 function Skills() {
   let data = [
     {
       imageUrl: "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp",
-      name: "John Doe",
+      name: "Felix Idalia",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti nesciunt sint eligendi reprehenderit reiciendis.",
     },
     {
@@ -22,48 +22,28 @@ function Skills() {
   
   return (
     <div
-      id="carouselExampleControls"
-      className="carousel bg-white bg-opacity-50 slide text-center carousel-dark mt-4"
-      style={{ "border-radius": "30px" }}
+      className="carousel bg-white slide text-center carousel-dark mt-4"
+      style={{ borderRadius : "30px" }}
       data-mdb-ride="carousel"
     >
       <div className="carousel-inner">
         <div className="carousel-item active">
           <img
             className="rounded-circle shadow-1-strong mb-4"
-            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
+            src="https://lh3.googleusercontent.com/pw/AM-JKLUGMJizVZX_XSfn9dvm04dakPAw0mI3sOuguEnxvHP7sjAg7y9vazP7vDEqXj2OGfeKqW5WG1G9Wk7l1jtJup_LU9RUvZiDBnbC5EtyrRPAn7-2z-FRxhNpoZcExHPpiRrBjAQGLgNGUICuq4mOCN9x=s625-no?authuser=0"
             alt="avatar"
-            style={{ width: "150px" }}
+            style={{ width: "100px" }}
           />
           <div className="row d-flex justify-content-center">
             <div className="col-lg-8">
-              <h5 className="mb-3">Maria Kate</h5>
+              <h5 className="mb-3 fw-bold">Judith Debora</h5>
               <p className="text-muted">
                 <i className="fas fa-quote-left pe-2"></i>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-                et deleniti nesciunt sint eligendi reprehenderit reiciendis,
-                quibusdam illo, beatae quia fugit consequatur laudantium velit
-                magnam error. Consectetur distinctio fugit doloremque.
+                Veary commited and a good problem solver, timely delivery wich meets the customers need. Feel free to contact him am sure you wont be disaponted.   
+                <i className="fas fa-quote-right pe-2"></i>
               </p>
             </div>
           </div>
-          <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
-            <li>
-              <i className="fas fa-star fa-sm"></i>
-            </li>
-            <li>
-              <i className="fas fa-star fa-sm"></i>
-            </li>
-            <li>
-              <i className="fas fa-star fa-sm"></i>
-            </li>
-            <li>
-              <i className="fas fa-star fa-sm"></i>
-            </li>
-            <li>
-              <i className="far fa-star fa-sm"></i>
-            </li>
-          </ul>
         </div>
         {data.map((user) => (
           <Testimony

@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Copyrightfooter from "./Copyrightfooter";
 
-function Footer() {
+let stylenon = { textDecoration: "none" };
+
+function Footer() { 
   const [phonenumberOne, setPhoneOne] = useState();
   const [phonenumberTwo, setPhoneTwo] = useState();
   const [email, setEmail] = useState();
@@ -19,11 +21,14 @@ function Footer() {
         setEmail(data2.email);
         setLocation(data2.location);
         setMytext(data2.myText);
-      });
+      })
+      .catch((error) => {
+        console.log(error);
+      })
   }, []);
 
   return (
-    <footer className="text-center text-lg-start bg-light text-muted container-xxl">
+    <footer className="text-center text-lg-start bg-light  bg-opacity-75 text-muted">
       <section className="p-4 border-bottom">
         <div className="container text-center text-md-start mt-5">
           <div className="row mt-3">
@@ -39,7 +44,7 @@ function Footer() {
               <p>
                 <Link
                   to=""
-                  style={{ textDecoration: "none" }}
+                  style={stylenon}
                   className="text-reset"
                 >
                   ReactJS
@@ -48,7 +53,7 @@ function Footer() {
               <p>
                 <Link
                   to=""
-                  style={{ textDecoration: "none" }}
+                  style={stylenon}
                   className="text-reset"
                 >
                   NodeJS
@@ -57,7 +62,7 @@ function Footer() {
               <p>
                 <Link
                   to=""
-                  style={{ textDecoration: "none" }}
+                  style={stylenon}
                   className="text-reset"
                 >
                   MongoDB
@@ -66,7 +71,7 @@ function Footer() {
               <p>
                 <Link
                   to=""
-                  style={{ textDecoration: "none" }}
+                  style={stylenon}
                   className="text-reset"
                 >
                   DevOps
@@ -77,7 +82,7 @@ function Footer() {
             <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-center">
               <h6 className="text-uppercase fw-bold mb-4">contacts</h6>
               <p>
-                <i class="fas fa-home me-3"></i>
+                <i className="fas fa-home me-3"></i>
                 {location}
               </p>
               <p>

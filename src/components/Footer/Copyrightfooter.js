@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Copyrightfooter() {
   return (
-    <div className="text-center p-4 bg-rgba(0, 0, 0, 0.05)">
+    <div className="text-center p-4 bg-light">
         © {new Date().getFullYear()} Copyright:
         <Link
           to=""

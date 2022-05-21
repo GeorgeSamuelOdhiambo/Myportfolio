@@ -1,20 +1,16 @@
 import React from "react";
-import ContactmeForm from "../components/ContactmeForm";
-import Socialmedia from "../components/Footer/Socialmedia";
+import ContactmeForm from "../components/contactme/ContactmeForm";
+import Socialmedia from "../components/contactme/Socialmedia"
+import Contacttop from "../components/contactme/Contacttop"
 
 const Contacts = () => {
   return (
-    //<ContactmeForm/>
     <>
-      <div
-        className="row p-4 mt-5"
-        style={{
-          "background-color": "#9d789b",
-        }}
-      >
+      <div className="row p-4 mt-5">
+      <Contacttop/>
         <ContactmeForm />
+        <Socialmedia/>
       </div>
-      <Socialmedia />
     </>
   );
 };

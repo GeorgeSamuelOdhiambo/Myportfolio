@@ -15,8 +15,8 @@ function servicescad(props) {
                 alt="Loading..."
               ></img>
             </div>
-            <h4>
-              <a href="#/">{props.header}</a>
+            <h4 className='fw-bold'>
+              <a href={props.link} target="_blank" style={{ textDecoration: "none"}} rel="noreferrer">{props.header}</a>
             </h4>
             <p>{props.text}</p>
           </div>
