@@ -28,7 +28,7 @@ function contacttop() {
               alt="..."
             />
           </div>
-          <div className="carousel-item" style={myheight}>
+          <div className="carousel-item text-center" style={myheight}>
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLvNz1BQJ1qrg0Q--YKfvghpBKPceJ7dNmwopLlc0stgm-ehkQrgvlCQLYUpO6M5CvupM&usqp=CAU"
               className="d-block w-100"

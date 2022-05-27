@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Copyrightfooter from "./Copyrightfooter";
+const { REACT_APP_ROUTE_URL } = process.env
 
 let stylenon = { textDecoration: "none" };
-
 function Footer() { 
   const [phonenumberOne, setPhoneOne] = useState();
   const [phonenumberTwo, setPhoneTwo] = useState();
@@ -12,7 +12,7 @@ function Footer() {
   const [myText, setMytext] = useState();
 
   useEffect(() => {
-    fetch("http://localhost:8080/")
+    fetch(`${REACT_APP_ROUTE_URL}`)
       .then((response) => response.json())
       .then((data) => {
         let data2 = data.info[0];
