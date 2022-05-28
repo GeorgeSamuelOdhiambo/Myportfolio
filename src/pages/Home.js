@@ -7,7 +7,7 @@ import Skills from "../components/Skills/Skills";
 const Home = () => {
   return (
     <div
-      className="container-xxl pt-5 pb-2 text-center justify-content-center align-items-center"
+      className="container-xxl bg-secondary pt-5 pb-2 text-center justify-content-center align-items-center bg-opacity-75"
     >
       <Avataland />
       <Aboutme/>

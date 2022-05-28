@@ -10,7 +10,7 @@ const textcolor = {
 
 function Avataland() {
   return (
-    <section>
+    <section >
       <div className="pt-5 pb-3 h-100 ">
         <div className="row d-flex justify-content-center align-items-center h-100">
           <div className="container">
