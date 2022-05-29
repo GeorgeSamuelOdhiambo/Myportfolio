@@ -13,7 +13,7 @@ function Aboutme() {
       <div style={{ border: "2px solid #e73131", width: "100%" }}></div>
       <div className="section-title">
         <p className="" style={{fontWeight:"revert"}}>
-          My name is Odhiambo George Samuel, a delighted computer sciantist with alot of skills in technology both software and hardware.
+          My name is Odhiambo George Samuel, a delighted computer scientist with alot of skills in technology both software and hardware.
         </p>
       </div>
 
@@ -21,7 +21,7 @@ function Aboutme() {
         <div className="col-lg-8 pt-4 pt-lg-0 content">
           <h3>APIs <span style={textcolor}>&amp;</span> UI/UX Designer</h3>
           <p className="fst-italic">
-          My name is Odhiambo George Samuel, a delighted computer sciantist with alot of skills in technology both software and hardware.
+          My name is Odhiambo George Samuel, a delighted computer scientist with alot of skills in technology both software and hardware.
           </p>
           <div className="row">
             <div className="col-lg-6">
