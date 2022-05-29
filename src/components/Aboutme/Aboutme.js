@@ -13,7 +13,7 @@ function Aboutme() {
       <div style={{ border: "2px solid #e73131", width: "100%" }}></div>
       <div className="section-title">
         <p className="" style={{fontWeight:"revert"}}>
-          My name is Odhiambo George Samuel, a delighted computer scientist with alot of skills in technology both software and hardware.
+          My name is Odhiambo George Samuel, I enjoy being challenged and engaging with projects that require me to work outside my comfort and knowledge set, as continuing to learn new languages and development techniques are important to me and the success of my career.
         </p>
       </div>
 

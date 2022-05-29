@@ -10,10 +10,7 @@ function Skillsandsevices() {
           <h2 className="fw-bold">MY <span style={textcolor}>SKILLS</span></h2>
           <div style={{ border: "2px solid #e73131", width: "100%" }}></div>
           <p>
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-            fugiat sit in iste officiis commodi quidem hic quas.
+            
           </p>
         </div>
 
@@ -57,9 +54,9 @@ function Skillsandsevices() {
               </span>
               <div className="progress" style={lineheigt}>
                 <div
-                  className="progress-bar bg-success w-50"
+                  className="progress-bar bg-success w-75"
                   role="progressbar"
-                  aria-valuenow="50"
+                  aria-valuenow="75"
                   aria-valuemin="0"
                   aria-valuemax="100"
                 ></div>
@@ -87,7 +84,7 @@ function Skillsandsevices() {
               </span>
               <div className="progress " style={lineheigt}>
                 <div
-                  className="progress-bar bg-success w-75"
+                  className="progress-bar bg-success w-50"
                   role="progressbar"
                   aria-valuenow="50"
                   aria-valuemin="0"
@@ -145,7 +142,7 @@ function Skillsandsevices() {
 
             <div className="progress-bar-wrap mt-2">
               <span className="skill">
-                DevOps <i className="val">75%</i>
+                NextJS <i className="val">75%</i>
               </span>
               <div className="progress " style={lineheigt}>
                 <div
