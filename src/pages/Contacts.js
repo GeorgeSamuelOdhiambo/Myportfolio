@@ -6,7 +6,7 @@ import Contacttop from "../components/contactme/Contacttop"
 const Contacts = () => {
   return (
     <>
-      <div className="row p-4 mt-5">
+      <div className="row p-4 mt-5 bg-secondary bg-opacity-75">
       <Contacttop/>
         <ContactmeForm />
         <Socialmedia/>

@@ -51,9 +51,8 @@ const Navbar = (props) => {
         </div>
 
         <div className="d-flex align-items-center">
-          <div className="dropdown">
             <Link
-              className="dropdown-toggle d-flex align-items-center hidden-arrow text-white"
+              className="d-flex align-items-center text-white"
               to="/"
               id="navbarDropdownMenuAvatar"
               role="button"
@@ -68,27 +67,6 @@ const Navbar = (props) => {
                 loading="lazy"
               />
             </Link>
-            <ul
-              className="dropdown-menu dropdown-menu-end"
-              aria-labelledby="navbarDropdownMenuAvatar"
-            >
-              <li key="1">
-                <Link className="dropdown-item" to="/about">
-                  My profile
-                </Link>
-              </li>
-              <li key="2">
-                <Link className="dropdown-item" to="/#">
-                  Settings
-                </Link>
-              </li>
-              <li key="3">
-                <Link className="dropdown-item" to="/contacts">
-                  Contact Me
-                </Link>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
     </nav>

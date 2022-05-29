@@ -1,20 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {FaLinkedin} from "react-icons/fa"
-import {IoMdContact} from "react-icons/io"
+import { FaLinkedin } from "react-icons/fa";
+import { IoMdContact } from "react-icons/io";
 
-const textcolor = { 
-  one : {color: "#F57C00"},
-  two : {color: "#FFB74D"}
- };
+const textcolor = {
+  one: { color: "#F57C00" },
+  two: { color: "#FFB74D" },
+};
 
 function Avataland() {
   return (
-    <section >
+    <section>
       <div className="pt-5 pb-3 h-100 ">
         <div className="row d-flex justify-content-center align-items-center h-100">
           <div className="container">
-            <div className="card" style={{ borderRadius : "15px" }}>
+            <div className="card" style={{ borderRadius: "15px" }}>
               <div className="card-body p-4 ">
                 <div className="d-flex text-black row">
                   <div className=" col-sm-12 col-xxl-6 col-xl-6">
@@ -27,9 +27,13 @@ function Avataland() {
                   </div>
 
                   <div className="col-xxl-6 col-xl-6 col-sm-12 text-center">
-                    <h1 className="mb-3 m-4 text-uppercase fw-bold"><strong>Odhiambo</strong> <strong>George</strong> <strong>Samuel</strong></h1>
+                    <h1 className="mb-3 m-4 text-uppercase fw-bold">
+                      <strong>Odhiambo</strong> <strong>George</strong>{" "}
+                      <strong>Samuel</strong>
+                    </h1>
                     <h2 className="mb-2 pb-1 fw-bold">
-                      <span style={textcolor.one}>WEB</span> <span style={textcolor.two}>DEVELOPER</span>
+                      <span style={textcolor.one}>WEB</span>{" "}
+                      <span style={textcolor.two}>DEVELOPER</span>
                     </h2>
                     <div
                       className="justify-content-center rounded-3 p-2 mb-2"
@@ -63,7 +67,9 @@ function Avataland() {
                               <p className="mb-0">80%</p>
                             </div>
                             <div className="px-2 col-xxl col-xl col-lg col-md col-sm-6">
-                              <p className="small text-muted mb-1">ReactNative</p>
+                              <p className="small text-muted mb-1">
+                                ReactNative
+                              </p>
                               <p className="mb-0">70%</p>
                             </div>
                           </div>
@@ -71,8 +77,28 @@ function Avataland() {
                       </div>
                     </div>
                     <div className="d-flex pt-1">
-                        <Link to="/contacts" className="btn-success text-white btn-outline-success me-1 flex-grow-1"  style={{ textDecoration: "none", borderRadius:"30px",height:"30px" }} ><IoMdContact/>Contact Me</Link>
-                        <a href="https://www.linkedin.com/in/george-samuel-44807b20b/" target="_blank" className="btn-success flex-grow-1 text-white" style={{ textDecoration: "none", borderRadius:"30px"}} rel="noreferrer"><FaLinkedin/>LinkIn Profile</a>
+                      <Link
+                        to="/contacts"
+                        className="btn-success text-white btn-outline-success me-1 flex-grow-1"
+                        style={{
+                          textDecoration: "none",
+                          borderRadius: "30px",
+                          height: "30px",
+                        }}
+                      >
+                        <IoMdContact />
+                        Contact Me
+                      </Link>
+                      <a
+                        href="https://www.linkedin.com/in/george-samuel-44807b20b/"
+                        target="_blank"
+                        className="btn-success flex-grow-1 text-white"
+                        style={{ textDecoration: "none", borderRadius: "30px" }}
+                        rel="noreferrer"
+                      >
+                        <FaLinkedin />
+                        LinkIn Profile
+                      </a>
                     </div>
                   </div>
                 </div>

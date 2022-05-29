@@ -4,7 +4,7 @@ import Resume from '../components/Aboutme/Resume'
 
 const About = () => {
   return (
-    <div className="container-xxl pt-5 text-center justify-content-center align-items-center">
+    <div className="container-xxl pt-5 text-center justify-content-center align-items-center bg-secondary bg-opacity-75">
     <div className='p-3'></div>
       <Aboutme/>
       <Resume/>

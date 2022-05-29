@@ -30,7 +30,7 @@ function Skills() {
         <div className="carousel-item active">
           <img
             className="rounded-circle shadow-1-strong mb-4"
-            src="https://lh3.googleusercontent.com/pw/AM-JKLUGMJizVZX_XSfn9dvm04dakPAw0mI3sOuguEnxvHP7sjAg7y9vazP7vDEqXj2OGfeKqW5WG1G9Wk7l1jtJup_LU9RUvZiDBnbC5EtyrRPAn7-2z-FRxhNpoZcExHPpiRrBjAQGLgNGUICuq4mOCN9x=s625-no?authuser=0"
+            src="https://media-exp1.licdn.com/dms/image/C4D03AQFnyIdZv9_gsg/profile-displayphoto-shrink_800_800/0/1619109299635?e=1658966400&v=beta&t=zfr-0L5WBHIufDm--xjteSKFJ-bJ3Mbroq_MevJm7schttps://media-exp1.licdn.com/dms/image/C4D03AQFnyIdZv9_gsg/profile-displayphoto-shrink_800_800/0/1619109299635?e=1658966400&v=beta&t=zfr-0L5WBHIufDm--xjteSKFJ-bJ3Mbroq_MevJm7sc"
             alt="avatar"
             style={{ width: "100px" }}
           />

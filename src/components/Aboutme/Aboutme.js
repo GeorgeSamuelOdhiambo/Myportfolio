@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const textcolor = { color: "#e73131" };
 function Aboutme() {
