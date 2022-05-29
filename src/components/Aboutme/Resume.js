@@ -11,7 +11,6 @@ const textcolor = {
   two: { color: "#FFB74D" },
 };
 function Resume() {
-  
   const defaultLayoutPluginInstance = defaultLayoutPlugin();
   return (
     <section className="bg-white mt-2 p-2">
@@ -20,11 +19,19 @@ function Resume() {
           <strong style={textcolor.one}>Resume</strong>
         </h2>
       </div>
-      <Worker className="card" workerUrl="https://unpkg.com/pdfjs-dist@2.14.305/build/pdf.worker.min.js">
-      <div style={{ height: "1000px" , width:"100%" }}>
-        <Viewer fileUrl={demoFile} plugins={[defaultLayoutPluginInstance]} />
+      <div className="container-md">
+        <Worker
+          className="card"
+          workerUrl="https://unpkg.com/pdfjs-dist@2.14.305/build/pdf.worker.min.js"
+        >
+          <div className="container-sm" style={{ height: "720px" }}>
+            <Viewer
+              fileUrl={demoFile}
+              plugins={[defaultLayoutPluginInstance]}
+            />
+          </div>
+        </Worker>
       </div>
-    </Worker>
     </section>
   );
 }
