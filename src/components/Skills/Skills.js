@@ -40,7 +40,7 @@ function Skills() {
                 ></li>
               ))}
           </ol>
-          <div className="carouse-inner">
+          <div className="carouse-innerr">
             {dataIn &&
               myTestimony.map((info) => (
                 <div className={`carousel-item ${info.status}`}>
