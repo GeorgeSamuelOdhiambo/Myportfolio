@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Servicescad from "./Servicescad";
-const { REACT_APP_ROUTE_URL } = process.env;
+const { REACT_APP_ROUTE_URLL } = process.env;
 
 function Services() {
   const [servicesdata, setData] = useState();
@@ -8,8 +8,7 @@ function Services() {
 
   const textcolor = { color: "#e73131" };
   useEffect(() => {
-    console.log(`${REACT_APP_ROUTE_URL}services`);
-    fetch(`${REACT_APP_ROUTE_URL}services`)
+    fetch(`${REACT_APP_ROUTE_URLL}services`)
       .then((response) => response.json())
       .then((data) => {
         setData(data.info);
