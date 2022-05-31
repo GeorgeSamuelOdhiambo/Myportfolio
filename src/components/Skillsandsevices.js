@@ -10,7 +10,6 @@ function Skillsandsevices() {
           <h2 className="fw-bold">MY <span style={textcolor}>SKILLS</span></h2>
           <div style={{ border: "2px solid #e73131", width: "100%" }}></div>
           <p>
-            You can
           </p>
         </div>
 
