@@ -13,7 +13,7 @@ function Aboutme() {
       <div style={{ border: "2px solid #e73131", width: "100%" }}></div>
       <div className="section-title">
         <p className="" style={{fontWeight:"revert"}}>
-          My name is Odhiambo George Samuel, I enjoy being challenged and engaging with projects that require me to work outside my comfort and knowledge set, as continuing to learn new languages and development techniques are important to me and the success of my career.
+          My name is Odhiambo George Samuel, Experienced software developer building mordern products with the latest technology. Experienced in client scripting language and server-side scripting language like HTML5,Javascript,TypeScript,JSON,Bootstrap,React,Redux,Express,Node.js.
         </p>
       </div>
 
