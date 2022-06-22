@@ -30,13 +30,13 @@ function Aboutme() {
                   <strong>Birthday:</strong> 7 June 1998
                 </li>
                 <li key="2">
-                  <strong>Website:</strong> comming soon
+                  <strong>Website:</strong> coming soon
                 </li>
                 <li key="3">
                   <strong>Phone:</strong> +254796699782
                 </li>
                 <li key="4">
-                  <strong>City:</strong> City : Kisumu, Kenya
+                  <strong>City:</strong> Kisumu, Kenya
                 </li>
               </ul>
             </div>
