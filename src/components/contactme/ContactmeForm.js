@@ -17,11 +17,9 @@ const Contactme = () => {
           </h1>
           <div style={{ border: "2px solid #e73131", width: "100%" }}></div>
           <p className="p-2 fw-bold">
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-            fugiat sit in iste officiis commodi quidem hic quas.
-          </p>
+            If you have any questions or queries, all always be happy to help. Feel free to contact me by telephone 
+            or email amd i will be sure to get back to you as soon as possible.
+            </p>
         </div>
       </div>
       <div className="container">
